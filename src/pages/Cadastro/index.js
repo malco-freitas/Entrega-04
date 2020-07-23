@@ -10,7 +10,7 @@ class Cadastro extends Component {
           login:"login",
           senha:"senha",
         };
-      }
+    }
     render() {
         const {login,senha} = this.state;
         return( 
@@ -19,9 +19,9 @@ class Cadastro extends Component {
                     <h1>Novo Cadastro</h1>
                     <h2>Digite um nome de Login:</h2>
                     <input type="text"/>
-                    <div className="entradaLogin"></div>
+                    <div className="entradaLogin" value={login}></div>
                     <h2>Digite uma senha:</h2>
-                    <input type="password"/>
+                    <input type="password" value={senha}/>
                     <div className="entradaSenha"></div>
                     <h2>Repita sua senha:</h2>
                     <input type="password" value={senha}/>
