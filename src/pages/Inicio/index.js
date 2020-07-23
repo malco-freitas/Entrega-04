@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Curtidas from './../../components/Curtidas.js';
 import Comentarios from './../../components/Comentarios.js';
-import Time from './../../components/Time.js';
+//import Time from './../../components/Time';
 // import Sugestao from './components/Sugestao.js';
 import './style.css';
 
@@ -148,7 +148,7 @@ Continuamos em oração!"/>
                   <Comentarios comentador="pr_sergiomarques" comentario="A paz. Estamos em oração e confiando no agir de Deus.🙏🏾🙏🏾🙏🏾"/>
                 </div>
                 <div>
-                  <Time tempo="25 DE JUNHO"/>
+                  {/* <Time tempo="25 DE JUNHO"/> */}
                 </div>
               </div>
 

@@ -1,9 +1,18 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 import "./styles.css";
 
 class Cadastro extends Component {
+    constructor() {
+        super();
+        this.state = {
+          login:"login",
+          senha:"senha",
+        };
+      }
     render() {
+        const {login,senha} = this.state;
         return( 
             <div className="pagina">   
                 <div className="caixaCadastro">
@@ -15,7 +24,7 @@ class Cadastro extends Component {
                     <input type="password"/>
                     <div className="entradaSenha"></div>
                     <h2>Repita sua senha:</h2>
-                    <input type="password"/>
+                    <input type="password" value={senha}/>
                     <div className="entradaSenha"></div>
                     <Link to={`/Login`}>
                         <div className="botaoLogin">Login</div>
